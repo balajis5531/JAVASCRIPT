@@ -7,7 +7,7 @@
 // let string="";
 
 // for(let i=1; i<=n;i++ ){
-    
+
 //     string=string+i+" ";
 
 // }
@@ -21,7 +21,7 @@
 
 // let string="";
 // for(let i=n; i>=1;i-- ){
-    
+
 //     string=string+i+" ";
 
 // }
@@ -37,7 +37,7 @@
 // let string="";
 
 // for(let i=1; i<=7; i=i+2 ){    //iwas increase +2 =i =3change .
-    
+
 //     string=string+i+" ";
 
 // }
@@ -49,17 +49,54 @@
 
 // 1 2 3 4 5 4 3 2 1
 
-let n=5;
+// let n=5;
 
-let string="";       //i want to concadinate so i create a string .
+// let string="";       //i want to concadinate so i create a string .
 
-for(let i=1; i<=n; i++ ){    //main loop
-    
-    string=string+i+" ";
+// for(let i=1; i<=n; i++ ){    //main loop
+
+//     string=string+i+" ";
+
+// }
+// for(let i=n-1; i>=1; i--){
+//     string=string+i+" ";
+
+// }
+// console.log(string);
+
+// let n=5;
+// for(let i=1; i<=n; i++){
+//     let string ="";
+//     for(let j=1; j<i; j++){
+//         string=string+"  ";
+//     }
+//     console.log(string+i);
+// }
+
+// let n = 5;
+// for (let i = 1; i <= n; i++) {    //i=1    //main for loop
+//     let z = "";
+//     for (let j = n - 1; j >= i; j--) {    //j=5-1 ,j=1;j--// 4 spce
+//         z = z + " ";                         //space point
+//     }
+//     for (let k = 1; k <= i; k++) {         // loop of loop
+//         z = z + " " + k;                       // space + value== answer
+//     }
+//     console.log(z);
+// }                        //working triangle
+
+let n=4;
+let string ="";
+
+for(let i=1; i<=n; i++){
+
+    string+string+"  ";
+
+    for(let j=1; j<=i; j++){
+
+        string=string+j;
+    }
+    console.log(string);
 
 }
-for(let i=n-1; i>=1; i--){
-    string=string+i+" ";
 
-}
-console.log(string);
