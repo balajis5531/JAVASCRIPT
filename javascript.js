@@ -125,7 +125,7 @@
 //         name:"balaji3",
 //         name1:"balaji4"
 //     },
-   
+
 
 // }
 // function greeting(){
@@ -151,3 +151,114 @@
 // balaji.gree();
 
 
+// JSON JavaScript Object Notation
+//Given a array of student objects 
+// 0. Find a student whose name is Aravind.
+// 1. Find the eldest student
+// 2. Find the students whose physics score is more than 80
+// 3. Count the number of students whose total average is more than 70. 
+let array_student_obj = [
+    {
+        name: "Aravind",
+        age: 99,
+        salary: 10000,
+        marks: {
+            maths: 80,
+            physics: 78,
+            chemistry: 90
+        }
+    },
+    {
+        name: "Parameshwari",
+        age: 18,
+        salary: 10000,
+        marks: {
+            maths: 95,
+            physics: 95,
+            chemistry: 89
+        }
+    },
+    {
+        name: "Barath",
+        age: 21,
+        salary: 10000,
+        marks: {
+            maths: 76,
+            physics: 81,
+            chemistry: 76
+        }
+    }, {
+        name: "Saran",
+        age: 55,
+        salary: 10000,
+        marks: {
+            maths: 67,
+            physics: 51,
+            chemistry: 39
+        }
+    }];
+
+
+
+
+    // for(let i =0; i<array_student_obj.length; i++){
+
+
+    //     if(array_student_obj[i].name==="Aravind"){
+
+    //         console.log("find successfully aravind name")
+
+    //         break;
+
+    //     }else{
+
+    //         console.log("not aravind name");
+
+    //         break;
+
+    //     }
+    // }
+
+    //     let age_value=0;
+    //     let ueser_value="";
+    
+
+    // for(let i=0; i<array_student_obj.length; i++){
+
+    //     if(array_student_obj[i].age>=age_value){
+
+    //          age_value= array_student_obj[i].age;
+    //          ueser_value=array_student_obj[i];
+
+    //     }
+    // }
+    // console.log(age_value, ueser_value);
+
+
+
+// for (let i=0; i<array_student_obj.length; i++){
+
+//     if(array_student_obj[i]["marks"]["physics"]>=80){
+//         console.log(array_student_obj[i]);
+        
+//     }
+
+// }
+
+let arr=[];
+
+array_student_obj.forEach(element => {
+
+
+   let value = element["marks"]["maths"]+element["marks"]["physics"]+ element["marks"]["chemistry"];
+   value= value/3;
+   if(value>=70){
+    arr.push(value+element['name']);
+   }
+
+});
+console.log(arr)
+//Hints: 
+// console.log(array_student_obj[3].salary);
+// let i = 1;
+// console.log(array_student_obj[i].name == "Nanda");

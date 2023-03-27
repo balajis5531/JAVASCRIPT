@@ -42,35 +42,26 @@
 //     console.log(row);
 // }
 
-// const n = 4;
+const n = 4;
 
-// for(let i=1; i<=n; i++){
+for(let i=1; i<=n; i++){
 
-//   let string="";
+  let string="";
 
-//   for(let j=1; j<=n; j++){
+  for(let j=1; j<=n; j++){
   
-//     if(j<=i){    
+    if(j<=i){    
 
-//       string=string + j +" ";
+      string=string + j +" ";
 
-//     }else{
+    }else{
 
-//       string=string+". "; 
+      string=string+". "; 
 
-//     }
-
-
-//   }
-
-//   console.log(string);
-// }
+    }
 
 
-// let string=""
-// for(let i=1; i<=4; i++){
-//     for(let j=4; j>=i; j--){
-//         string=string+".";
-//         console.log(string+j)
-//     }
-// }
+  }
+
+  console.log(string);
+}

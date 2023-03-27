@@ -172,16 +172,91 @@
 // }
 //  table.forEach(item => product(item));
 
-let arr= [25, 4, 8, 5, 1];
+// let arr= [25, 4, 43, 5, 1];
 
-let max= 0;
+// let max= 0 ;
 
-for(let i=1; i<=arr.length; i++){
-    if(max<=arr[i]){
-        max = arr[i];
-    }else{
-        max=max;
+// for(let i=0; i<arr.length; i++){
+//     if(max>=arr[i]){
+//         max = arr[i];
+//     }
+//     // max= max + arr[i];
+// }
+
+// console.log(max);
+
+
+// let arr = [2,3,4,5];
+// let sum = "";
+// for (let i =0 ; i <arr.length; i++) {
+
+//       sum=arr[i]+sum;
+
+// }
+// console.log(sum);
+
+
+
+// let arr = [1, 2, 3, 4, 5];
+// let sum = '';
+// for (let i = 0; i < arr.length; i = i + 2) {
+
+//     if(arr[i] == 1 && arr[i] == 3) {
+
+//         sum = sum + arr[i];
+
+//     }
+// }
+// console.log(sum);
+
+let arr = [5, 4, 9, 10, 11, 13 ,15,7];
+
+let n = 4;
+// let string="";
+let a = 0, b = 0, c = 0, d=0;
+
+for (let i=0; i <n; i++) {
+
+    a = 0, b = 0; c = 0, d=0;
+
+
+    for (let k = 0; k < n; k++) {
+
+        a = a + arr[k];
+        b = b + arr[k+1];
+        c = c + arr[k+2];
+        d = d + arr[k+3];
+
     }
+
+}
+console.log(a,b,c,d)
+
+if (a > b && a > c) {
+    console.log(a + " maximum value");
+}
+else if (b > c&& b>d) {
+    console.log(b + " maximum value")
+
+} else if(c>d){
+    console.log(c + ' maximum value')
+}
+else{
+    console.log(d + ' maximum value')
 }
 
-console.log(max)
+
+
+
+
+
+
+// let arr=[1, 2, 3, 4, 5, 6, 7, 8];
+// let value=0;
+// for(i=0; i<arr.length; i++){
+//     if(arr[i]%2===0){
+//         value= value+arr[i];
+
+//     }
+// }
+// console.log(value);

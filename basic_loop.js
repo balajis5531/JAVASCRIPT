@@ -85,18 +85,17 @@
 //     console.log(z);
 // }                        //working triangle
 
-let n=4;
-let string ="";
 
-for(let i=1; i<=n; i++){
+// arr=[1,2,3,4,5,6,7,8,9];
 
-    string+string+"  ";
+// for(let i=0; i<arr.length; i++){
+//     let temp=0;
+//      for (let j=0; j<arr.length; j++){
+//         if(arr[i]==arr[j]){
+            
+//         }
+//      }
+// }
 
-    for(let j=1; j<=i; j++){
 
-        string=string+j;
-    }
-    console.log(string);
-
-}
-
+// let name - 'madam'
